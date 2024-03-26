@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+
+    <!-- 
+    - primary meta tags
+  -->
+    <title>VELVET PALATE RESTAURANT</title>
+    <meta name="title" content="Velvet - Amazing & Delicious Food" />
+    <meta
+      name="description"
+      content="Reservation website made by Husseincode"
+    />
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="apple-touch-icon.png" type="image/x-icon" />
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/confirmation.css" />
+
+    <!-- 
+    - preload images
+  -->
+    <link rel="preload" as="image" href="./assets/images/hero-slider-1.jpg" />
+    <link rel="preload" as="image" href="./assets/images/hero-slider-2.jpg" />
+    <link rel="preload" as="image" href="./assets/images/hero-slider-3.jpg" />
+    <script src="./assets/js/reservation.js"></script>
+  </head>
+
+  <body id="top">
+    <!-- 
+    - #PRELOADER
+  -->
+
+    <div class="preload" data-preaload>
+      <!-- <div class="circle"></div>
+      <p class="text">Grilli</p> -->
+    </div>
+
+    <!-- 
+    - #TOP BAR
+  -->
+
+    <div class="topbar">
+      <div class="container">
+        <div class="separator"></div>
+
+        <div class="topbar-item item-2">
+          <div class="icon">
+            <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+          </div>
+
+          <span class="span">Daily : 8.00 am to 10.00 pm</span>
+        </div>
+
+        <a href="tel:+11234567890" class="topbar-item link">
+          <div class="icon">
+            <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+          </div>
+
+          <span class="span">+1 123 456 7890</span>
+        </a>
+
+        <div class="separator"></div>
+
+        <a href="mailto:booking@restaurant.com" class="topbar-item link">
+          <div class="icon">
+            <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+          </div>
+
+          <span class="span">booking@restaurant.com</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="container">
+        <a href="#" class="logo">
+          <img
+            src="./assets/images/husseinpics/navlogo.png"
+            width="100"
+            alt="Grilli - Home"
+          />
+        </a>
+
+        <nav class="navbar" data-navbar>
+          <button class="close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+
+          <a href="#" class="logo">
+            <img
+              src="./assets/images/husseinpics/navlogo.png"
+              width="160"
+              height="50"
+              alt="Grilli - Home"
+            />
+          </a>
+
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="#home" class="navbar-link hover-underline">
+                <div class="separator"></div>
+
+                <span class="span">Home</span>
+              </a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#service" class="navbar-link hover-underline">
+                <div class="separator"></div>
+
+                <span class="span">Menus</span>
+              </a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#reservation" class="navbar-link hover-underline">
+                <div class="separator"></div>
+
+                <span class="span">About Us</span>
+              </a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#footer" class="navbar-link hover-underline">
+                <div class="separator"></div>
+
+                <span class="span">Contact</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <span class="line line-1"></span>
+          <span class="line line-2"></span>
+          <span class="line line-3"></span>
+        </button>
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <!-- 
+        - #HERO
+      -->
+
+        <section class="hero text-center" aria-label="home" id="home">
+          <ul class="hero-slider" data-hero-slider>
+            <li class="slider-item active" data-hero-slider-item>
+              <div class="slider-bg">
+                <img
+                  src="./assets/images/husseinpics/header-slider-1.jpg"
+                  width="1880"
+                  height="950"
+                  alt=""
+                  class="img-cover"
+                />
+              </div>
+              <p class="label-2 section-subtitle slider-reveal">
+                Tradational & Hygine
+              </p>
+
+              <h1 class="display-1 hero-title slider-reveal">
+                Where Every Bite Is <br />
+                a Culinary Delight
+              </h1>
+
+              <p class="body-2 hero-text slider-reveal">
+                Come with family & feel the joy of mouthwatering food
+              </p>
+
+              <a href="#" class="btn btn-primary slider-reveal">
+                <span class="text text-1">View Our Menu</span>
+
+                <span class="text text-2" aria-hidden="true"
+                  >View Our Menu</span
+                >
+              </a>
+            </li>
+
+            <li class="slider-item" data-hero-slider-item>
+              <div class="slider-bg">
+                <img
+                  src="./assets/images/husseinpics/header-slider-2.png"
+                  width="1880"
+                  height="950"
+                  alt=""
+                  class="img-cover"
+                />
+              </div>
+
+              <p class="label-2 section-subtitle slider-reveal">
+                delightful experience
+              </p>
+
+              <h1 class="display-1 hero-title slider-reveal">
+                Where Every Flavor Tells a Story <br />
+                of Passion and Quality
+              </h1>
+
+              <p class="body-2 hero-text slider-reveal">
+                Come with family & feel the joy of mouthwatering food
+              </p>
+
+              <a href="#" class="btn btn-primary slider-reveal">
+                <span class="text text-1">View Our Menu</span>
+
+                <span class="text text-2" aria-hidden="true"
+                  >View Our Menu</span
+                >
+              </a>
+            </li>
+
+            <li class="slider-item" data-hero-slider-item>
+              <div class="slider-bg">
+                <img
+                  src="./assets/images/husseinpics/header-slider-3.jpg"
+                  width="1880"
+                  height="950"
+                  alt=""
+                  class="img-cover"
+                />
+              </div>
+
+              <p class="label-2 section-subtitle slider-reveal">
+                amazing & delicious
+              </p>
+
+              <h1 class="display-1 hero-title slider-reveal">
+                Experience Flavorful Creations <br />
+                Beyond Imagination
+              </h1>
+
+              <p class="body-2 hero-text slider-reveal">
+                Come with family & feel the joy of mouthwatering food
+              </p>
+
+              <a href="#" class="btn btn-primary slider-reveal">
+                <span class="text text-1">View Our Menu</span>
+
+                <span class="text text-2" aria-hidden="true"
+                  >View Our Menu</span
+                >
+              </a>
+            </li>
+          </ul>
+
+          <button
+            class="slider-btn prev"
+            aria-label="slide to previous"
+            data-prev-btn
+            style="visibility: hidden"
+          ></button>
+
+          <button
+            class="slider-btn next"
+            aria-label="slide to next"
+            data-next-btn
+            style="visibility: hidden"
+          ></button>
+        </section>
+
+        <!-- 
+        - #SERVICE
+      -->
+
+        <section
+          id="service"
+          class="section service bg-black-10 text-center"
+          aria-label="service"
+        >
+          <div class="container">
+            <p class="section-subtitle label-2">Flavors For Royalty</p>
+
+            <h2 class="headline-1 section-title">We Offer Top Notch</h2>
+
+            <p class="section-text">
+              Elevate your dining experience with our exceptional service. From
+              the warm welcome at the door to the attentive care throughout your
+              meal, our team is committed to ensuring your satisfaction. Relax
+              and enjoy as we create memorable moments for you and your guests.
+            </p>
+
+            <ul class="grid-list">
+              <li>
+                <div class="service-card">
+                  <a href="#" class="has-before hover:shine">
+                    <figure
+                      class="card-banner img-holder"
+                      style="--width: 285; --height: 336"
+                    >
+                      <img
+                        src="./assets/images/husseinpics/IMG_0735.png"
+                        width="285"
+                        height="336"
+                        loading="lazy"
+                        alt="Breakfast"
+                        class="img-cover"
+                      />
+                    </figure>
+                  </a>
+
+                  <div class="card-content">
+                    <h3 class="title-4 card-title">
+                      <a href="#">Breakfast</a>
+                    </h3>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card">
+                  <a href="#" class="has-before hover:shine">
+                    <figure
+                      class="card-banner img-holder"
+                      style="--width: 285; --height: 336"
+                    >
+                      <img
+                        src="./assets/images/service-2.jpg"
+                        width="285"
+                        height="336"
+                        loading="lazy"
+                        alt="Appetizers"
+                        class="img-cover"
+                      />
+                    </figure>
+                  </a>
+
+                  <div class="card-content">
+                    <h3 class="title-4 card-title">
+                      <a href="#">Appetizers</a>
+                    </h3>
+                  </div>
+                </div>
+              </li>
+
+              <li>
+                <div class="service-card">
+                  <a href="#" class="has-before hover:shine">
+                    <figure
+                      class="card-banner img-holder"
+                      style="--width: 285; --height: 336"
+                    >
+                      <img
+                        src="./assets/images/husseinpics/IMG_0731.png"
+                        width="285"
+                        height="336"
+                        loading="lazy"
+                        alt="Drinks"
+                        class="img-cover"
+                      />
+                    </figure>
+                  </a>
+
+                  <div class="card-content">
+                    <h3 class="title-4 card-title">
+                      <a href="#">Drinks</a>
+                    </h3>
+                  </div>
+                </div>
+              </li>
+            </ul>
+
+            <img
+              src="./assets/images/shape-1.png"
+              width="246"
+              height="412"
+              loading="lazy"
+              alt="shape"
+              class="shape shape-1 move-anim"
+            />
+            <img
+              src="./assets/images/shape-2.png"
+              width="343"
+              height="345"
+              loading="lazy"
+              alt="shape"
+              class="shape shape-2 move-anim"
+            />
+          </div>
+        </section>
+
+        <!-- 
+        - #TESTIMONIALS
+      -->
+
+        <section
+          class="section testi text-center has-bg-image"
+          style="
+            background-image: url('./assets/images/husseinpics/testimonial_dark_pic.png');
+          "
+          aria-label="testimonials"
+        >
+          <div class="container">
+            <div class="quote">”</div>
+
+            <p class="headline-2 testi-text">
+              I wanted to thank you for inviting me down for that amazing dinner
+              the other night. The food was extraordinary.
+            </p>
+
+            <div class="wrapper">
+              <div class="separator"></div>
+              <div class="separator"></div>
+              <div class="separator"></div>
+            </div>
+
+            <div class="profile">
+              <img
+                src="./assets/images/husseinpics/customer_img.png"
+                width="100"
+                height="100"
+                loading="lazy"
+                alt="Sam Jhonson"
+                class="img"
+              />
+
+              <p class="label-2 profile-name">Mark</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+        - #RESERVATION
+      -->
+
+        <section class="reservation" id="reservation">
+          <div class="container">
+            <div class="form reservation-form bg-black-10">
+              <form id="reservation_form" class="form-left">
+                <h2 class="headline-1 text-center">Online Reservation</h2>
+
+                <p class="form-text text-center">
+                  Booking request
+                  <a href="tel:+88123123456" class="link">+1 123 456 7890</a>
+                  or fill out the order form
+                </p>
+
+                <div class="input-wrapper">
+                  <input
+                    type="text"
+                    name="name"
+                    placeholder="Your Name"
+                    autocomplete="off"
+                    id="user_name"
+                    class="input-field"
+                    required
+                  />
+
+                  <input
+                    type="tel"
+                    name="phone"
+                    placeholder="Phone Number"
+                    autocomplete="off"
+                    id="user_phone_number"
+                    class="input-field"
+                    required
+                  />
+                </div>
+
+                <div class="input-wrapper">
+                  <div class="icon-wrapper">
+                    <ion-icon
+                      name="person-outline"
+                      aria-hidden="true"
+                    ></ion-icon>
+
+                    <select
+                      name="person"
+                      id="customer_quantity"
+                      class="input-field"
+                      required
+                    >
+                      <option value="1-person">1 Person</option>
+                      <option value="2-person">2 Person</option>
+                      <option value="3-person">3 Person</option>
+                      <option value="4-person">4 Person</option>
+                      <option value="5-person">5 Person</option>
+                      <option value="6-person">6 Person</option>
+                      <option value="7-person">7 Person</option>
+                    </select>
+
+                    <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <div class="icon-wrapper">
+                    <ion-icon
+                      name="calendar-clear-outline"
+                      aria-hidden="true"
+                    ></ion-icon>
+
+                    <input
+                      type="date"
+                      id="date"
+                      name="reservation-date"
+                      class="input-field"
+                      required
+                    />
+
+                    <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <div class="icon-wrapper">
+                    <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                    <select
+                      name="person"
+                      id="time-reservation"
+                      class="input-field"
+                      required
+                    >
+                      <option value="08:00am">08 : 00 am</option>
+                      <option value="09:00am">09 : 00 am</option>
+                      <option value="010:00am">10 : 00 am</option>
+                      <option value="011:00am">11 : 00 am</option>
+                      <option value="012:00am">12 : 00 am</option>
+                      <option value="01:00pm">01 : 00 pm</option>
+                      <option value="02:00pm">02 : 00 pm</option>
+                      <option value="03:00pm">03 : 00 pm</option>
+                      <option value="04:00pm">04 : 00 pm</option>
+                      <option value="05:00pm">05 : 00 pm</option>
+                      <option value="06:00pm">06 : 00 pm</option>
+                      <option value="07:00pm">07 : 00 pm</option>
+                      <option value="08:00pm">08 : 00 pm</option>
+                      <option value="09:00pm">09 : 00 pm</option>
+                      <option value="10:00pm">10 : 00 pm</option>
+                    </select>
+
+                    <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                  </div>
+                </div>
+
+                <textarea
+                  id="reservation_msg"
+                  name="message"
+                  placeholder="Message"
+                  autocomplete="off"
+                  class="input-field"
+                  required
+                ></textarea>
+
+                <button
+                  type="submit"
+                  id="table_booking_btn"
+                  class="btn btn-secondary"
+                >
+                  <span class="text text-1">Book A Table</span>
+
+                  <span class="text text-2" aria-hidden="true"
+                    >Book A Table</span
+                  >
+                </button>
+              </form>
+
+              <!-- confirmation section  -->
+              <div class="popup hidden">
+                <div class="container main_reservation">
+                  <div class="confirmation_data">
+                    <div class="confirm_message"></div>
+                    <h1 class="reserve_username section-title headline-1"></h1>
+                    <ul>
+                      <li>Your Phone Number : +923019527928</li>
+                      <li>Number of guests : 5</li>
+                      <li>Date : 09/15/2001</li>
+                      <li>Time : 09:00 am</li>
+                      <li>
+                        message : Lorem ipsum dolor sit, amet consectetur
+                        adipisicing elit.
+                      </li>
+                    </ul>
+                    <div class="reservation_btns">
+                      <button
+                        type="submit"
+                        id="confirm_reservation"
+                        class="btn btn-secondary"
+                      >
+                        <span class="text text-1">Confirm</span>
+
+                        <span class="text text-2" aria-hidden="true"
+                          >Confirm</span
+                        >
+                      </button>
+                      <button
+                        type="submit"
+                        id="modify_btn"
+                        class="btn btn-secondary"
+                      >
+                        <span class="text text-1">Modify</span>
+
+                        <span class="text text-2" aria-hidden="true"
+                          >Modify</span
+                        >
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="form-right text-center"
+                style="
+                  background-image: url('./assets/images/form-pattern.png');
+                "
+              >
+                <h2 class="headline-1 text-center">Contact Us</h2>
+
+                <p class="contact-label">Booking Request</p>
+
+                <a
+                  href="tel:+1 123 456 7890"
+                  class="body-1 contact-number hover-underline"
+                  >+1 123 456 7890</a
+                >
+
+                <div class="separator"></div>
+
+                <p class="contact-label">Lunch Time</p>
+
+                <p class="body-4">
+                  Monday to Sunday <br />
+                  11.00 am - 2.30pm
+                </p>
+
+                <p class="contact-label">Dinner Time</p>
+
+                <p class="body-4">
+                  Monday to Sunday <br />
+                  05.00 pm - 10.00pm
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+        - #FEATURES
+      -->
+
+        <section class="section features text-center" aria-label="features">
+          <div class="container">
+            <p class="section-subtitle label-2">Why Choose Us</p>
+
+            <h2 class="headline-1 section-title">Our Strength</h2>
+
+            <ul class="grid-list">
+              <li class="feature-item">
+                <div class="feature-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/features-icon-1.png"
+                      width="100"
+                      height="80"
+                      loading="lazy"
+                      alt="icon"
+                    />
+                  </div>
+
+                  <h3 class="title-2 card-title">Hygienic Food</h3>
+                </div>
+              </li>
+
+              <li class="feature-item">
+                <div class="feature-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/features-icon-2.png"
+                      width="100"
+                      height="80"
+                      loading="lazy"
+                      alt="icon"
+                    />
+                  </div>
+
+                  <h3 class="title-2 card-title">Fresh Environment</h3>
+                </div>
+              </li>
+
+              <li class="feature-item">
+                <div class="feature-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/features-icon-3.png"
+                      width="100"
+                      height="80"
+                      loading="lazy"
+                      alt="icon"
+                    />
+                  </div>
+
+                  <h3 class="title-2 card-title">Skilled Chefs</h3>
+                </div>
+              </li>
+
+              <li class="feature-item">
+                <div class="feature-card">
+                  <div class="card-icon">
+                    <img
+                      src="./assets/images/features-icon-4.png"
+                      width="100"
+                      height="80"
+                      loading="lazy"
+                      alt="icon"
+                    />
+                  </div>
+
+                  <h3 class="title-2 card-title">Event & Party</h3>
+                </div>
+              </li>
+            </ul>
+
+            <img
+              src="./assets/images/shape-7.png"
+              width="208"
+              height="178"
+              loading="lazy"
+              alt="shape"
+              class="shape shape-1"
+            />
+
+            <img
+              src="./assets/images/shape-8.png"
+              width="120"
+              height="115"
+              loading="lazy"
+              alt="shape"
+              class="shape shape-2"
+            />
+          </div>
+        </section>
+
+        <!-- 
+        - #EVENT
+      --></article>
+    </main>
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer
+      class="footer section has-bg-image text-center"
+      id="footer"
+      style="background-image: url('./assets/images/footer-bg.jpg')"
+    >
+      <div class="container">
+        <div class="footer-top grid-list">
+          <div class="footer-brand has-before has-after">
+            <a href="#" class="logo">
+              <img
+                src="./assets/images/husseinpics/navlogo.png"
+                width="160"
+                height="50"
+                loading="lazy"
+                alt="grilli home"
+              />
+            </a>
+            <p class="title-1">Feedback</p>
+
+            <p class="label-1">
+              "We value your thoughts and strive to continuously improve. Please
+              share your feedback with us
+            </p>
+
+            <form action="" class="input-wrapper">
+              <div class="icon-wrapper">
+                <input
+                  type="email"
+                  name="email_id"
+                  placeholder="Your email"
+                  autocomplete="off"
+                  required
+                  class="input-field"
+                  id="email_id"
+                />
+                <textarea
+                  id="message"
+                  name="message"
+                  placeholder="Enter the Feedback"
+                  cols="30"
+                  class="input-field"
+                  rows="10"
+                  required
+                ></textarea>
+              </div>
+
+              <button
+                type="submit"
+                onclick="return SendMail(event)"
+                class="btn-secondary"
+              >
+                <span class="text text-1">Subscribe</span>
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="copyright">
+            &copy; 2024 Velvet Palate. All Rights Reserved | Crafted by
+            <a
+              href="https://github.com/codewithsadee"
+              target="_blank"
+              class="link"
+              >codewithhussein</a
+            >
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 
+    - #BACK TO TOP
+  -->
+    <a href="#reservation" class="hero-btn has-after">
+      <span class="label-2 text-center span">Book a table</span>
+    </a>
+
+    <script src="./assets/js/script.js"></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "ddvwPvO6uYHZI6Wp_",
+        });
+      })();
+    </script>
+    <script>
+      function SendMail(e) {
+        e.preventDefault();
+        var params = {
+          email_id: document.getElementById("email_id").value,
+          message: document.getElementById("message").value,
+        };
+        emailjs
+          .send("service_zbjg03n", "template_orh67qn", params)
+          .then(function (res) {
+            alert("Success" + res.status);
+          });
+        return false;
+      }
+    </script>
+  </body>
+</html>
